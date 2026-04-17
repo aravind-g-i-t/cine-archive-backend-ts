@@ -14,7 +14,7 @@ export const handleSessionId = (
     res.cookie("sessionId", sessionId, {
       httpOnly: true,
       secure: true,
-      sameSite: "lax",
+      sameSite: "none",
       maxAge: 30 * 24 * 60 * 60 * 1000,
     });
   }
